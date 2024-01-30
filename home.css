@@ -1,0 +1,85 @@
+:root {
+  --header-bg: #0f0f0f;
+  --icon-color: #fff;
+  --text-color: #fff;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--header-bg);
+  font-family: sans-serif;
+  margin: 0;
+}
+
+i {
+  color: var(--icon-color);
+}
+
+.header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.header .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 0 1 97px;
+}
+
+.header .logo img {
+  height: 40%;
+  width: 100%;
+}
+
+.header .search {
+  flex: 0 1 40%;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.header .search .input {
+  flex-grow: 1;
+}
+
+.header .search .microphone {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.2em;
+}
+
+.header .search .microphone:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header .account {
+  flex: 0 1 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.header .account .personal {
+  background-color: #ec407a;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  width: 32px;
+  height: 32px;
+}
