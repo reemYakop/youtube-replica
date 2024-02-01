@@ -1,0 +1,33 @@
+main .container {
+  max-width: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.container .top-links {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  column-gap: 0.7rem;
+  overflow: scroll;
+}
+
+.container .top-links::-webkit-scrollbar {
+  display: none;
+}
+
+.container .top-links li {
+  color: rgba(var(--nav-text-color-rgb), 100%);
+  background-color: rgba(var(--nav-text-color-rgb), 10%);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.container .top-links li:hover {
+  background-color: rgba(var(--nav-text-color-rgb), 30%);
+}

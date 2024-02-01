@@ -1,22 +1,10 @@
-main {
-  display: flex;
-  height: calc(100% - 56px);
-  --nav-text-color-rgb: 255, 255, 255;
-}
-
 main nav {
-  max-width: 230px;
   max-height: 100%;
   overflow: scroll;
-  width: 100%;
   display: flex;
+  flex: 0 0 230px;
   flex-direction: column;
   padding-inline-end: 10px;
-}
-
-nav .nav-list {
-  margin: 0;
-  padding: 0;
 }
 
 nav .nav-list {
@@ -34,6 +22,7 @@ nav .nav-list .nav-list-item {
   height: var(--height);
   min-width: 0;
   margin-inline-start: 0.5rem;
+  cursor: pointer;
 }
 
 nav .nav-list .nav-list-item.list-title {
