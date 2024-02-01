@@ -2,6 +2,7 @@
   --header-bg: #0f0f0f;
   --icon-color: #fff;
   --text-color: #fff;
+  --height: 40px;
 }
 .circle {
   width: 40px;
