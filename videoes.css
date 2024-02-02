@@ -1,7 +1,10 @@
 .videoes {
   /* width: 100%; */
   max-width: 100%;
+  max-height: calc(100% - 56px);
+  overflow: scroll;
   display: grid;
+  flex: 1 1 100%;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
   row-gap: 2.5rem;
