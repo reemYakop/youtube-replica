@@ -46,6 +46,49 @@
 .videoes .video .v-img img {
   max-width: 100%;
   max-height: 100%;
+  position: relative;
+}
+
+.videoes .video .v-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0; /* instead of top:0, bottom:0 , right:0, left:0 (stretch elements to all edges)*/
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.videoes .video .v-img.hover-img::after {
+  background-image: url("https://i.ytimg.com/vi/hiDIgkwckHQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoLPaa-nUSb_wRHFtgKxHOd8rBUg");
+  background-size: contain;
+}
+
+.videoes .video .v-img.hover-color::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.videoes .video .v-img.hover-color::before {
+  content: " PLAY ALL";
+  display: block;
+  position: absolute;
+  inset: 0; /* instead of top:0, bottom:0 , right:0, left:0 (stretch elements to all edges)*/
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(var(--nav-text-color-rgb), 0.8);
+  font-family: "inherit";
+  font-size: 0.8rem;
+}
+
+.videoes .video .v-img:hover::before {
+  opacity: 1;
+}
+
+.videoes .video .v-img:hover::after {
+  opacity: 1;
 }
 
 .videoes .video .v-details {
